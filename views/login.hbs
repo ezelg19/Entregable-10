@@ -1,0 +1,22 @@
+<form style="margin:2.5% 30%" action='/login' method="post">
+    {{#if expiro}}
+        <div class="form-outline mb-4">
+            <FONT SIZE=7>Session Expirada</FONT>
+        </div>
+    {{/if}}
+    <div class="form-outline mb-4">
+        <input type="text" id="nombre" name="nombre" class="form-control" />
+        <label class="form-label" for="form2Example1">Nombre</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="apellido" name="apellido" class="form-control" />
+        <label class="form-label" for="form2Example2">Apellido</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="alias" name="alias" class="form-control" />
+        <label class="form-label" for="form2Example2">Alias</label>
+    </div>
+    <input type="submit" class="btn btn-primary btn-block mb-4" value="Sign In">
+</form>
